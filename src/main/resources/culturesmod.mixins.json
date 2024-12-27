@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.archman609.culturesmod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

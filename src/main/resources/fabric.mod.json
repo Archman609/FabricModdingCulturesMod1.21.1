@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "culturesmod",
+	"version": "${version}",
+	"name": "Cultures Mod",
+	"description": "This is a mod focused on discovering different cultures!",
+	"authors": [
+		"Archman609"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/culturesmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.archman609.culturesmod.CulturesMod"
+		],
+		"fabric-datagen": [
+			"net.archman609.culturesmod.CulturesModDataGenerator"
+		],
+		"client": [
+			"net.archman609.culturesmod.CulturesModClient"
+		]
+	},
+	"mixins": [
+		"culturesmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
